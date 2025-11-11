@@ -307,6 +307,7 @@
 .botonesSeccionGaleria {
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
 .botonesSeccionGaleria button {
@@ -384,3 +385,117 @@
 }
 
 /* FIN DE GALERÍA */
+
+/* UBICACIÓN Y CONTACTO */
+
+.seccionUbicacion {
+    background-color: #EBE4D6;
+}
+
+.divSeccionUbicacion {
+    max-width: 90%;
+    padding: 5rem 0 5rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.divSeccionUbicacion h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #5D4032;
+    font-size: 2.2rem;
+}
+
+.mapaSeccionUbicacion {
+    margin-top: 3rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.mapaSeccionUbicacion iframe {
+    width: 100%;
+    height: 18.75rem;
+}
+
+.direccionSocialSeccionUbicacion {
+    background-color: white;
+    padding: 2rem 1.5rem;
+    border-radius: 1.25rem;
+    margin-top: 1rem;
+}
+
+.contenidoDireccionRRSS {
+    max-width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.bi-geo-alt-fill {
+    font-size: 1.3rem;
+    color: #6C9B4B;
+}
+
+.contenido2 {
+    text-align: left;
+}
+
+.contenidoDireccionRRSS h2 {
+    font-size: 1.1563rem;
+}
+
+.contenidoDireccionRRSS p {
+    font-size: 1rem;
+    color: #5d4032c5;
+}
+
+.contenidoDireccionRRSS p:nth-of-type(2) {
+    font-size: .875rem;
+}
+
+.btnGoogleMaps {
+    background-color: #F9F8F6;
+    color: #6C9B4B;
+    border-color: #6C9B4B;
+    outline-color: #6C9B4B;
+    border-radius: .625rem;
+    width: 100%;
+    font-size: .9375rem;
+    margin-top: .5rem;
+}
+
+.btnGoogleMaps:hover,
+.btnGoogleMaps:focus,
+.btnGoogleMaps:active {
+    background-color: #6C9B4B !important;
+    color: white !important;
+    border-color: #6C9B4B !important;
+    outline-color: #6C9B4B !important;
+    border-radius: .625rem;
+    width: 100%;
+}
+
+.iconosRRSS {
+    display: flex;
+    gap: 1rem;
+}
+
+.contenidoRRSS {
+    margin-top: 2rem;
+    border-top: .0313rem solid rgba(128, 128, 128, 0.312);
+}
+
+.contenidoRRSS h2 {
+    font-size: 1.1563rem;
+    text-align: left;
+    margin: 2rem 0 1.125rem 0;
+}
+
+.iconosRRSS i {
+    background-color: #6C9B4B;
+    color: white;
+    font-size: 1.125rem;
+    padding: .5rem .7813rem;
+    border-radius: 1.875rem;
+}
