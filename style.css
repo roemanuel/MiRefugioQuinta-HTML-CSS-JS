@@ -108,7 +108,7 @@
 
 /* FIN DEL HERO */
 
-/* SERVICIOS */
+/* INFORMACIÓN */
 
 .seccionInformacion {
     background-color: #EBE4D6;
@@ -181,6 +181,10 @@
     font-size: 2.2rem;
     margin: 0.2rem 0 0 0;
 }
+
+/* FIN DE INFORMACIÓN */
+
+/* SERVICIOS */
 
 .seccionServicios {
     background-color: #5D4032;
@@ -268,3 +272,115 @@
 .cardFondo:nth-of-type(2) {
     margin-top: 2.5rem;
 }
+
+/* FIN DE SERVICIOS */
+
+/* GALERIA */
+
+.seccionGaleria {
+    background-color: #F9F8F6;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorSeccionGaleria {
+    max-width: 90%;
+    padding: 5rem 0 5rem 0;
+}
+
+.contenedorSeccionGaleria h2 {
+    text-align: center;
+    color: #5D4032;
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.contenedorSeccionGaleria p {
+    text-align: center;
+    color: #5D4032;
+    padding: 1rem 0 2.5rem 0;
+    font-size: 1.2rem;
+    transition: visibility 0.1s ease;
+}
+
+.botonesSeccionGaleria {
+    display: flex;
+    gap: 1rem;
+}
+
+.botonesSeccionGaleria button {
+    background-color: #F9F8F6;
+    border-color: #5D4032;
+    color: #5D4032;
+    border-radius: .625rem;
+    margin-bottom: 3rem;
+}
+
+.botonesSeccionGaleria button:focus,
+.botonesSeccionGaleria button:hover {
+    background-color: #5D4032 !important;
+    border-color: #5D4032 !important;
+}
+
+.divImagenesGaleria {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contenedorIMGSeccionGaleria {
+    position: relative;
+    border-radius: 1.25rem;
+}
+
+.imgSeccionGaleria img {
+    max-width: 100%;
+    height: 20.3125rem;
+    border-radius: 1.25rem;
+    object-fit: cover;
+    transition: filter 0.5s ease;
+}
+
+.imgSeccionGaleria p {
+    visibility: hidden;
+    color: white;
+    position: absolute;
+    top: 79%;
+    left: 8%;
+    font-weight: 400;
+}
+
+.contenedorIMGSeccionGaleria:hover div img,
+.contenedorIMGSeccionGaleria:focus div img,
+.contenedorIMGSeccionGaleria:active div img {
+    filter: brightness(65%);
+}
+
+.contenedorIMGSeccionGaleria:hover p,
+.contenedorIMGSeccionGaleria:hover p,
+.contenedorIMGSeccionGaleria:active p {
+    visibility: visible;
+}
+
+.divBotonIG {
+    display: flex;
+    justify-content: center;
+}
+
+.botonIG {
+    text-decoration: none;
+    color: #6C9B4B;
+    font-size: 1.1rem;
+    display: flex;
+    gap: .625rem;
+    margin-top: 2.5rem;
+    transition: color 0.2s ease;
+    max-width: max-content;
+}
+
+.botonIG:hover {
+    color: #496932;
+}
+
+/* FIN DE GALERÍA */
