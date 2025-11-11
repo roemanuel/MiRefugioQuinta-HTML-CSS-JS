@@ -44,7 +44,7 @@
     background-color: #5D4032;
     border-color: #5D4032;
     color: white;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 .bi-list {
@@ -110,7 +110,7 @@
 
 /* SERVICIOS */
 
-.seccionServicios {
+.seccionInformacion {
     background-color: #EBE4D6;
     padding: 5rem 1rem;
     display: flex;
@@ -120,12 +120,12 @@
     justify-self: center;
 }
 
-.seccionServicios div img {
+.seccionInformacion div img {
     max-width: 100%;
-    border-radius: 15px !important;
+    border-radius: .9375rem !important;
 }
 
-.seccionServicios h2 {
+.seccionInformacion h2 {
     font-family: "Playfair Display", serif;
     font-size: 2.2rem;
     font-weight: bold;
@@ -133,13 +133,13 @@
     margin-top: 2.5rem;
 }
 
-.seccionServicios p {
+.seccionInformacion p {
     color: #5d4032c5;
     margin-top: 1.2rem;
     font-size: 1.1rem;
 }
 
-.seccionServicios p:nth-of-type(2) {
+.seccionInformacion p:nth-of-type(2) {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -149,12 +149,12 @@
     font-weight: bold;
 }
 
-.seccionServicios i {
+.seccionInformacion i {
     font-size: 1.5rem;
     color: #6C9B4B;
 }
 
-.cuadradosSeccionServicios {
+.cuadradosSeccionInformacion {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -163,20 +163,108 @@
     align-content: center;
 }
 
-.tarjetaCuadradaSeccionServicios {
+.tarjetaCuadradaSeccionInformacion {
     background-color: white;
     flex-direction: column;
     display: grid;
     justify-items: center;
-    border-radius: 10%;
+    border-radius: .9375rem;
 }
-.tarjetaCuadradaSeccionServicios p {
+
+.tarjetaCuadradaSeccionInformacion p {
     font-size: 1rem;
     color: black;
     margin: 0 0 0.7rem 0;
 }
 
-.tarjetaCuadradaSeccionServicios i {
+.tarjetaCuadradaSeccionInformacion i {
     font-size: 2.2rem;
     margin: 0.2rem 0 0 0;
+}
+
+.seccionServicios {
+    background-color: #5D4032;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorSeccionServicios {
+    max-width: 90%;
+    padding: 5rem 0 5rem 0;
+}
+
+.contenedorSeccionServicios h2 {
+    text-align: center;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.contenedorSeccionServicios p {
+    text-align: center;
+    color: white;
+    padding: 1rem 0 2.5rem 0;
+    font-size: 1.2rem;
+}
+
+.cardFondo {
+    border-radius: 1.25rem;
+}
+
+.cardIMG {
+    height: 16.875rem;
+}
+
+.cardIMG img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardIMG,
+.cardIMG img {
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.contenedorCardTitulo {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.cardTitutlo {
+    padding: 1.5rem 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.cardTitutlo i {
+    font-size: 1.5rem;
+}
+
+.cardTitutlo h2 {
+    text-align: left;
+    color: #5D4032;
+    margin: 0;
+    font-size: 1.6rem;
+    padding-left: 0.5rem;
+}
+
+.cardParrafo {
+    padding: 1.3rem 2rem 1rem 2rem;
+    background-color: white;
+    border-radius: 0 0 1.25rem 1.25rem;
+}
+
+.cardParrafo p {
+    color: #5D4032;
+    text-align: left;
+    font-size: 0.95rem;
+    padding: 0;
+}
+
+.cardFondo:nth-of-type(2) {
+    margin-top: 2.5rem;
 }
