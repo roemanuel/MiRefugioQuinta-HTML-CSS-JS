@@ -50,15 +50,16 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
                         </li>
-                        <button class="btn btn-outline-success botonMenuHamburguesa" type="submit">Solicitá
-                            presupuesto</button>
+                        <a href="#consulta" class="btn btn-outline-success botonMenuHamburguesa nav-link">
+                            Solicitá presupuesto
+                        </a>
                     </ul>
                 </div>
             </div>
         </nav>
     </section>
 
-    <section class="seccionHero">
+    <section class="seccionHero" id="inicio">
         <div class="card text-bg-dark">
             <img src="images/fotoHero.jpg" class="card-img" alt="Imagen de portada">
 
@@ -246,12 +247,106 @@
                 <div class="contenidoRRSS">
                     <h2>Redes sociales</h2>
                     <div class="iconosRRSS">
-                        <i class="bi bi-whatsapp"></i>
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-facebook"></i>
+                        <a href="https://wa.me/5491133742086" target="_blank">
+                            <div class="iconosRRSS--icon"><i class="bi bi-whatsapp"></i></div>
+                        </a>
+                        <a href="https://www.instagram.com/mirefugio6061/" target="_blank">
+                            <div class="iconosRRSS--icon"><i class="bi bi-instagram"></i></div>
+                        </a>
+                        <a href="https://www.facebook.com/mauricio.lazarte.929598" target="_blank" id="consulta">
+                            <div class="iconosRRSS--icon"><i class="bi bi-facebook"></i></div>
+                        </a>
                     </div>
                 </div>
             </div>
+
+            <div class="contenedorFormulario">
+                <div class="tituloFormulario">
+                    <h2>Solicitá tu presupuesto</h2>
+                </div>
+                <div class="formulario">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputNombreApellido" class="form-label">Nombre y apellido</label>
+                            <input type="text" class="form-control" id="inputNombreApellido"
+                                aria-describedby="emailHelp" placeholder="Mirta Silvia Oliveto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputTipoEvento" class="form-label">Tipo de evento</label>
+                            <input type="text" class="form-control" id="inputTipoEvento"
+                                placeholder="Cumpleaños, reunión familiar, etc">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputFechaEstimada" class="form-label">Fecha estimada</label>
+                            <input type="date" class="form-control" id="inputFechaEstimada"
+                                placeholder="Cumpleaños, reunión familiar, etc">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputCantidadInvitados" class="form-label">Cantidad de invitados</label>
+                            <input type="number" class="form-control" id="inputCantidadInvitados"
+                                placeholder="Entre 1 y 50" max="50" min="1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputTelefono" class="form-label">Número de WhatsApp</label>
+                            <input type="tel" class="form-control" id="inputTelefono" placeholder="+54 9 11 3374 2086">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputMensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" placeholder="Contanos sobre tu evento..."
+                                id="floatingTextarea"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer_text1">
+            <h2>"Mi Refugio" Quinta</h2>
+            <p>Tu lugar ideal para compartir momentos inolvidables en un entorno natural y acogedor.</p>
+        </div>
+
+        <div class="footer_text2">
+            <h2>Enlaces rápidos</h2>
+            <div class="footer_text2-links">
+                <a href="#">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+
+        <div class="footer_text3">
+            <h2>Seguinos</h2>
+            <div class="footer_text3-rrss">
+                <a href="https://wa.me/5491133742086" target="_blank">
+                    <div class="footer_text3-rrss--icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/mirefugio6061/" target="_blank">
+                    <div class="footer_text3-rrss--icon">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/mauricio.lazarte.929598" target="_blank">
+                    <div class="footer_text3-rrss--icon">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                </a>
+                <a href="https://maps.app.goo.gl/YU3q6QK3Wjw398WVA" target="_blank">
+                    <div class="footer_text3-rrss--icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                </a>
+            </div>
+            <p>Av. San Fernando 6061, entre Pedro Agote y Las Bases, Cuartel V, Moreno, Buenos Aires</p>
+        </div>
+
+        <div class="footer_text4">
+            <p>© 2025 Mi Refugio Quinta. Todos los derechos reservados.</p>
         </div>
     </section>
 </body>
