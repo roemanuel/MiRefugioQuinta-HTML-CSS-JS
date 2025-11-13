@@ -24,39 +24,30 @@
 </head>
 
 <body>
-    <section class="seccionBarra">
-        <nav class="navbar fixed-top bg-body-tertiary seccionBarraNav">
-            <div class="container-fluid">
-                <a class="navbar-brand seccionBarraP" href="#">
-                    <p class="seccionBarraP1"><b>"Mi Refugio"</b></p>
-                    <p class="seccionBarraP2"><b>Quinta</b></p>
-                </a>
-                <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 listaMenuHamburguesa">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#servicios">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#galeria">Galeria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
-                        </li>
-                        <a href="#consulta" class="btn btn-outline-success botonMenuHamburguesa nav-link">
-                            Solicitá presupuesto
-                        </a>
-                    </ul>
-                </div>
+    <section class="nav">
+        <div class="nav-container">
+            <div class="nav-container__logo">
+                <h1>"Mi Refugio"</h1>
+                <h1 class="nav-container__logo--green">Quinta</h1>
             </div>
-        </nav>
+
+            <div class="nav-container__hamburger">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="nav-container__menu">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Servicios</li>
+                    <li>Galería</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+
+            <div class="nav-container__button">
+                <button>Solicitá presupuesto</button>
+            </div>
+        </div>
     </section>
 
     <section class="seccionHero" id="inicio">
@@ -75,89 +66,94 @@
     </section>
 
     <section class="seccionInformacion">
-        <div class="contenedorSeccionInformacion">
-
-        </div>
-        <div class="text-center">
-            <img src="images/fotoHero.jpg" class="rounded" alt="...">
-        </div>
-        <h2>Un espacio<br> pensado para <br> cualquier evento</h2>
-        <p>Contamos con parque, pileta, quincho, sector parrillero, juegos para niños, barra y baño, todo dentro de un
-            entorno natural y tranquilo para disfrutar en familia o con amigos.</p>
-        <p><i class="bi bi-people"></i>Capacidad máxima de 50 personas</p>
-        <div class="cuadradosSeccionInformacion">
-            <div class="tarjetaCuadradaSeccionInformacion">
-                <i class="bi bi-tree"></i>
-                <p>Parque</p>
+        <div class="container-informacion">
+            <div class="seccionInformacion_img">
+                <img src="images/fotoHero.jpg" class="rounded" alt="...">
             </div>
+            <div class="seccionInformacion_rigth">
+                <h2>Un espacio pensado para cualquier evento</h2>
+                <p>Contamos con parque, pileta, quincho, sector parrillero, juegos para niños, barra y baño, todo dentro
+                    de un entorno natural y tranquilo para disfrutar en familia o con amigos.</p>
+                <p><i class="bi bi-people"></i>Capacidad máxima de 50 personas</p>
+                <div class="cuadradosSeccionInformacion">
+                    <div class="tarjetaCuadradaSeccionInformacion">
+                        <i class="bi bi-tree"></i>
+                        <p>Parque</p>
+                    </div>
 
-            <div class="tarjetaCuadradaSeccionInformacion">
-                <i class="bi bi-water"></i>
-                <p>Pileta</p>
-            </div>
+                    <div class="tarjetaCuadradaSeccionInformacion">
+                        <i class="bi bi-water"></i>
+                        <p>Pileta</p>
+                    </div>
 
-            <div class="tarjetaCuadradaSeccionInformacion">
-                <i class="bi bi-p-circle"></i>
-                <p>Estacionamiento</p>
-            </div>
+                    <div class="tarjetaCuadradaSeccionInformacion">
+                        <i class="bi bi-p-circle"></i>
+                        <p>Estacionamiento</p>
+                    </div>
 
-            <div class="tarjetaCuadradaSeccionInformacion">
-                <i class="bi bi-fork-knife"></i>
-                <p>Quincho</p>
-            </div>
+                    <div class="tarjetaCuadradaSeccionInformacion">
+                        <i class="bi bi-fork-knife"></i>
+                        <p>Quincho</p>
+                    </div>
 
-            <div class="tarjetaCuadradaSeccionInformacion">
-                <i class="bi bi-fire"></i>
-                <p>Sector parrillero</p>
-            </div>
+                    <div class="tarjetaCuadradaSeccionInformacion">
+                        <i class="bi bi-fire"></i>
+                        <p>Sector parrillero</p>
+                    </div>
 
-            <div class="tarjetaCuadradaSeccionInformacion">
-                <i class="bi bi-dice-5"></i>
-                <p>Juego para ninos</p>
-            </div>
+                    <div class="tarjetaCuadradaSeccionInformacion">
+                        <i class="bi bi-dice-5"></i>
+                        <p>Juegos para niños</p>
+                    </div>
 
-            <div class="tarjetaCuadradaSeccionInformacion">
-                <i class="bi bi-cup-straw"></i>
-                <p>Barra</p>
-            </div>
+                    <div class="tarjetaCuadradaSeccionInformacion">
+                        <i class="bi bi-cup-straw"></i>
+                        <p>Barra</p>
+                    </div>
 
-            <div class="tarjetaCuadradaSeccionInformacion">
-                <i class="bi bi-droplet"></i>
-                <p>Bano</p>
+                    <div class="tarjetaCuadradaSeccionInformacion">
+                        <i class="bi bi-droplet"></i>
+                        <p>Baño</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="seccionServicios" id="servicios">
-        <div class="contenedorSeccionServicios">
-            <h2>Nuestros servicios</h2>
-            <p>Organizamos eventos con servicio de Pizza Party para disfrutar al aire libre.</p>
+        <div class="limite-ancho2">
+            <div class="contenedorSeccionServicios">
+                <h2 class="contenedorSeccionServicios__title">Nuestros servicios</h2>
+                <p>Organizamos eventos con servicio de Pizza Party para disfrutar al aire libre.</p>
+                <div class="contenedorSeccionServicios_cards">
+                    <div class="cardFondo">
+                        <div class="cardIMG">
+                            <img src="images/pizza-party-BCELEvaj.jpg" alt="">
+                        </div>
+                        <div class="cardTitutlo">
+                            <i class="bi bi-egg-fried"></i>
+                            <h2>Pizza Party</h2>
+                        </div>
+                        <div class="cardParrafo">
+                            <p>Disfrutá de pizzas recién hechas en un ambiente al aire libre, perfecto para cumpleaños,
+                                reuniones familiares y celebraciones.</p>
+                        </div>
+                    </div>
 
-            <div class="cardFondo">
-                <div class="cardIMG">
-                    <img src="images/pizza-party-BCELEvaj.jpg" alt="">
-                </div>
-                <div class="cardTitutlo">
-                    <i class="bi bi-egg-fried"></i>
-                    <h2>Pizza Party</h2>
-                </div>
-                <div class="cardParrafo">
-                    <p>Disfrutá de pizzas recién hechas en un ambiente al aire libre, perfecto para cumpleaños,
-                        reuniones familiares y celebraciones.</p>
-                </div>
-            </div>
-
-            <div class="cardFondo">
-                <div class="cardIMG">
-                    <img src="images/quincho-DOA4YkPv.jpg" alt="">
-                </div>
-                <div class="cardTitutlo">
-                    <i class="bi bi-balloon"></i>
-                    <h2>Eventos personalizados</h2>
-                </div>
-                <div class="cardParrafo">
-                    <p>Quincho con parrilla, barra y espacio cubierto. Ideal para eventos de cualquier tipo con la
-                        comodidad de un ambiente rústico y acogedor.</p>
+                    <div class="cardFondo">
+                        <div class="cardIMG">
+                            <img src="images/quincho-DOA4YkPv.jpg" alt="">
+                        </div>
+                        <div class="cardTitutlo">
+                            <i class="bi bi-balloon"></i>
+                            <h2>Eventos personalizados</h2>
+                        </div>
+                        <div class="cardParrafo">
+                            <p>Quincho con parrilla, barra y espacio cubierto. Ideal para eventos de cualquier tipo con
+                                la
+                                comodidad de un ambiente rústico y acogedor.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,7 +161,7 @@
 
     <section class="seccionGaleria" id="galeria">
         <div class="contenedorSeccionGaleria">
-            <h2>Galería</h2>
+            <h2 class="contenedorSeccionServicios__title">Galería</h2>
             <p>Descubrí los espacios de nuestra quinta</p>
 
             <div class="botonesSeccionGaleria">
@@ -214,7 +210,7 @@
                 </div>
             </div>
             <div class="divBotonIG">
-                <a href="https://www.instagram.com/mirefugio6061/" target="_blank" class="botonIG">
+                <a href="https://www.instagram.com/mirefugio6061/" target="_blank" class="botonIG" id="contacto">
                     <i class="bi bi-instagram"></i>
                     Ver más fotos en Instagram
                 </a>
@@ -222,40 +218,42 @@
         </div>
     </section>
 
-    <section class="seccionUbicacion" id="contacto">
-        <div class="divSeccionUbicacion">
-            <h2>Ubicación y contacto</h2>
-            <div class="mapaSeccionUbicacion">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290.4502073711326!2d-58.84963213118564!3d-34.551808831997015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc91007fb3149d%3A0x1087efe814d0b77b!2sQuinta%20M%C3%AD%20Refugio!5e0!3m2!1ses-419!2sar!4v1760937151089!5m2!1ses-419!2sar"
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    title="Mi Refugio - Quinta en Moreno"></iframe>
-            </div>
-
-            <div class="direccionSocialSeccionUbicacion">
-                <div class="contenidoDireccionRRSS">
-                    <div class="contenido1">
-                        <i class="bi bi-geo-alt-fill"></i>
-                    </div>
-                    <div class="contenido2">
-                        <h2>Dirección</h2>
-                        <p>Av. San Fernando 6061, entre Pedro Agote y Las Bases, Cuartel V, Moreno, Buenos Aires</p>
-                        <p>Con fácil acceso por autopista.</p>
-                    </div>
+    <section class="seccionUbicacion">
+        <div class="containerUbicacion">
+            <h2 class="seccionUbicacion_title">Ubicación y contacto</h2>
+            <div class="divSeccionUbicacion">
+                <div class="mapaSeccionUbicacion">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290.4502073711326!2d-58.84963213118564!3d-34.551808831997015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc91007fb3149d%3A0x1087efe814d0b77b!2sQuinta%20M%C3%AD%20Refugio!5e0!3m2!1ses-419!2sar!4v1760937151089!5m2!1ses-419!2sar"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Mi Refugio - Quinta en Moreno"></iframe>
                 </div>
-                <button type="button" class="btn btn-primary btnGoogleMaps">Ver en Google Maps</button>
-                <div class="contenidoRRSS">
-                    <h2>Redes sociales</h2>
-                    <div class="iconosRRSS">
-                        <a href="https://wa.me/5491133742086" target="_blank">
-                            <div class="iconosRRSS--icon"><i class="bi bi-whatsapp"></i></div>
-                        </a>
-                        <a href="https://www.instagram.com/mirefugio6061/" target="_blank">
-                            <div class="iconosRRSS--icon"><i class="bi bi-instagram"></i></div>
-                        </a>
-                        <a href="https://www.facebook.com/mauricio.lazarte.929598" target="_blank" id="consulta">
-                            <div class="iconosRRSS--icon"><i class="bi bi-facebook"></i></div>
-                        </a>
+
+                <div class="direccionSocialSeccionUbicacion">
+                    <div class="contenidoDireccionRRSS">
+                        <div class="contenido1">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div class="contenido2">
+                            <h2>Dirección</h2>
+                            <p>Av. San Fernando 6061, entre Pedro Agote y Las Bases, Cuartel V, Moreno, Buenos Aires</p>
+                            <p>Con fácil acceso por autopista.</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btnGoogleMaps">Ver en Google Maps</button>
+                    <div class="contenidoRRSS">
+                        <h2>Redes sociales</h2>
+                        <div class="iconosRRSS">
+                            <a href="https://wa.me/5491133742086" target="_blank">
+                                <div class="iconosRRSS--icon"><i class="bi bi-whatsapp"></i></div>
+                            </a>
+                            <a href="https://www.instagram.com/mirefugio6061/" target="_blank">
+                                <div class="iconosRRSS--icon"><i class="bi bi-instagram"></i></div>
+                            </a>
+                            <a href="https://www.facebook.com/mauricio.lazarte.929598" target="_blank">
+                                <div class="iconosRRSS--icon"><i class="bi bi-facebook"></i></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,7 +265,7 @@
                 <div class="formulario">
                     <form>
                         <div class="mb-3">
-                            <label for="inputNombreApellido" class="form-label">Nombre y apellido</label>
+                            <label for="inputNombreApellido" class="form-label label1">Nombre y apellido</label>
                             <input type="text" class="form-control" id="inputNombreApellido"
                                 aria-describedby="emailHelp" placeholder="Mirta Silvia Oliveto">
                         </div>
@@ -303,50 +301,52 @@
     </section>
 
     <section class="footer">
-        <div class="footer_text1">
-            <h2>"Mi Refugio" Quinta</h2>
-            <p>Tu lugar ideal para compartir momentos inolvidables en un entorno natural y acogedor.</p>
-        </div>
-
-        <div class="footer_text2">
-            <h2>Enlaces rápidos</h2>
-            <div class="footer_text2-links">
-                <a href="#">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#galeria">Galería</a>
-                <a href="#contacto">Contacto</a>
+        <div class="footer__container">
+            <div class="footer_text1">
+                <h2>"Mi Refugio" Quinta</h2>
+                <p>Tu lugar ideal para compartir momentos inolvidables en un entorno natural y acogedor.</p>
             </div>
-        </div>
 
-        <div class="footer_text3">
-            <h2>Seguinos</h2>
-            <div class="footer_text3-rrss">
-                <a href="https://wa.me/5491133742086" target="_blank">
-                    <div class="footer_text3-rrss--icon">
-                        <i class="bi bi-whatsapp"></i>
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/mirefugio6061/" target="_blank">
-                    <div class="footer_text3-rrss--icon">
-                        <i class="bi bi-instagram"></i>
-                    </div>
-                </a>
-                <a href="https://www.facebook.com/mauricio.lazarte.929598" target="_blank">
-                    <div class="footer_text3-rrss--icon">
-                        <i class="bi bi-facebook"></i>
-                    </div>
-                </a>
-                <a href="https://maps.app.goo.gl/YU3q6QK3Wjw398WVA" target="_blank">
-                    <div class="footer_text3-rrss--icon">
-                        <i class="bi bi-geo-alt-fill"></i>
-                    </div>
-                </a>
+            <div class="footer_text2">
+                <h2>Enlaces rápidos</h2>
+                <div class="footer_text2-links">
+                    <a href="#">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#galeria">Galería</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
             </div>
-            <p>Av. San Fernando 6061, entre Pedro Agote y Las Bases, Cuartel V, Moreno, Buenos Aires</p>
-        </div>
 
-        <div class="footer_text4">
-            <p>© 2025 Mi Refugio Quinta. Todos los derechos reservados.</p>
+            <div class="footer_text3">
+                <h2>Seguinos</h2>
+                <div class="footer_text3-rrss">
+                    <a href="https://wa.me/5491133742086" target="_blank">
+                        <div class="footer_text3-rrss--icon">
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/mirefugio6061/" target="_blank">
+                        <div class="footer_text3-rrss--icon">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/mauricio.lazarte.929598" target="_blank">
+                        <div class="footer_text3-rrss--icon">
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                    </a>
+                    <a href="https://maps.app.goo.gl/YU3q6QK3Wjw398WVA" target="_blank">
+                        <div class="footer_text3-rrss--icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                    </a>
+                </div>
+                <p>Av. San Fernando 6061, entre Pedro Agote y Las Bases, Cuartel V, Moreno, Buenos Aires</p>
+            </div>
+
+            <div class="footer_text4">
+                <p>© 2025 Mi Refugio Quinta. Todos los derechos reservados.</p>
+            </div>
         </div>
     </section>
 </body>
