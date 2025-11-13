@@ -34,12 +34,21 @@
 }
 
 .nav-container__logo--green {
-    color: #5e8641 !important;
+    color: #6C9B4B !important;
 }
 
 .nav-container__hamburger {
     display: grid;
     justify-self: left;
+    max-height: 3.125rem;
+    max-width: 3.125rem;
+}
+
+.nav-container__hamburger i {
+    color: #5D4032;
+    max-height: 3.125rem;
+    max-width: 3.125rem;
+    font-size: 2rem;
 }
 
 .nav-container__menu {
@@ -55,20 +64,38 @@
     gap: 2rem;
 }
 
-.nav-container__menu ul li {
+.nav-container__menu ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-container__menu ul a li {
     list-style: none;
     color: #483227;
 }
 
 .nav-container__button {
+    grid-column: 1 / 3;
     display: none;
+    width: 95%;
 }
 
-.nav-container__hamburger i {
-    color: #5D4032;
+.nav-container__button button {
+    width: 100%;
+    background-color: #5D4032;
+    color: white;
+    border: none;
+    border-radius: .625rem;
+    margin: .625rem 0;
+    padding: .5rem 0;
+    transition: background-color 0.2s ease, border 0.2s ease;
 }
 
-
+.nav-container__button button:active,
+.nav-container__button button:focus,
+.nav-container__button button:hover {
+    background-color: #483227;
+}
 
 .limite-ancho {
     width: 100% !important;
@@ -152,16 +179,6 @@
     color: white !important;
 }
 
-.bi-list {
-    font-size: 2rem;
-    color: #5D4032;
-}
-
-.bi-x {
-    font-size: 2.1875rem;
-    color: #5D4032;
-}
-
 /* FIN DE LA BARRA DE NAVEGACIÓN */
 
 /* HERO */
@@ -199,29 +216,29 @@
     font-size: 1.2rem;
 }
 
-.contenidoSeccionHero button:first-child {
+.botonVisita {
     background-color: #6C9B4B;
     border: #6C9B4B;
     transition: background-color 0.2s ease, border 0.2s ease;
 }
 
-.contenidoSeccionHero button:first-child:hover,
-.contenidoSeccionHero button:first-child:active,
-.contenidoSeccionHero button:first-child:focus {
+.botonVisita:hover,
+.botonVisita:active,
+.botonVisita:focus {
     background-color: #6c9b4be0 !important;
     border: #6c9b4be0 !important;
 }
 
-.contenidoSeccionHero button:nth-of-type(2) {
+.botonGaleria {
     background-color: white;
     border: white;
     color: #5D4032;
     transition: background-color 0.2s ease, border 0.2s ease;
 }
 
-.contenidoSeccionHero button:nth-of-type(2):hover,
-.contenidoSeccionHero button:nth-of-type(2):focus,
-.contenidoSeccionHero button:nth-of-type(2):active {
+.botonGaleria:hover,
+.botonGaleria:focus,
+.botonGaleria:active {
     background-color: rgba(255, 255, 255, 0.867) !important;
     border: rgba(255, 255, 255, 0.867) !important;
     color: #5D4032 !important;

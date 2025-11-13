@@ -1,20 +1,63 @@
-// AJUSTE AUTOMATICO DE LA NAV CON EL HERO //
+// MENÚ //
 
-function ajustarHero() {
-    const nav = document.querySelector('.seccionBarraNav');
-    const hero = document.querySelector('.seccionHero');
-    if (nav && hero) {
-        const navAltura = nav.offsetHeight;
-        hero.style.marginTop = navAltura + 'px';
+// ELEMENTOS
+const btnHamburguesa = document.querySelector('.nav-container__hamburger');
+const icono = btnHamburguesa.querySelector('i');
+const menu = document.querySelector('.nav-container__menu');
+const botonExtra = document.querySelector('.nav-container__button');
+const enlacesMenu = document.querySelectorAll('.nav-container__menu ul li');
+
+// ESTADO
+let menuAbierto = false;
+
+// ABRIR / CERRAR MENÚ
+btnHamburguesa.addEventListener('click', () => {
+    menuAbierto = !menuAbierto;
+
+    if (menuAbierto) {
+        menu.style.display = 'block';
+        botonExtra.style.display = 'block';
+
+        icono.classList.remove('bi-list');
+        icono.classList.add('bi-x');
+    } else {
+        menu.style.display = 'none';
+        botonExtra.style.display = 'none';
+
+        icono.classList.remove('bi-x');
+        icono.classList.add('bi-list');
     }
+});
+
+// CERRAR AL CLICKEAR UN ENLACE
+enlacesMenu.forEach(enlace => {
+    enlace.addEventListener('click', () => {
+        cerrarMenu();
+    });
+});
+
+// CERRAR AL CLICKEAR FUERA
+document.addEventListener('click', (e) => {
+    const clicEnMenu = menu.contains(e.target);
+    const clicEnBoton = btnHamburguesa.contains(e.target);
+
+    if (menuAbierto && !clicEnMenu && !clicEnBoton) {
+        cerrarMenu();
+    }
+});
+
+// FUNCIÓN PARA CERRAR
+function cerrarMenu() {
+    menuAbierto = false;
+
+    menu.style.display = 'none';
+    botonExtra.style.display = 'none';
+
+    icono.classList.remove('bi-x');
+    icono.classList.add('bi-list');
 }
 
-// Ejecutar cuando se carga la página
-window.addEventListener('DOMContentLoaded', ajustarHero);
-// Ejecutar cuando se redimensiona (por si cambia la altura del nav)
-window.addEventListener('resize', ajustarHero);
-
-// FIN DEL AJUSTE AUTOMATICO DE LA NAV CON EL HERO //
+// FIN DEL MENÚ //
 
 // FILTRO SECCIÓN GALERÍA //
 
@@ -50,44 +93,3 @@ document.querySelector('.buttonEventos').addEventListener('click', () => {
 });
 
 // FIN DEL FILTRO SECCIÓN GALERÍA //
-
-// CAMBIO DE ÍCONO EN BOTÓN HAMBURGUESA //
-const botonHamburguesa = document.querySelector('.botonHamburguesa');
-const iconoHamburguesa = botonHamburguesa.querySelector('i');
-const navCollapse = document.querySelector('#navbarSupportedContent');
-
-// Alternar ícono cuando se abre/cierra manualmente
-botonHamburguesa.addEventListener('click', () => {
-    if (iconoHamburguesa.classList.contains('bi-list')) {
-        iconoHamburguesa.classList.remove('bi-list');
-        iconoHamburguesa.classList.add('bi-x');
-    } else {
-        iconoHamburguesa.classList.remove('bi-x');
-        iconoHamburguesa.classList.add('bi-list');
-    }
-});
-
-// 1️⃣ Cerrar el menú cuando se hace clic en un enlace del menú
-const enlacesMenu = document.querySelectorAll('.navbar-nav .nav-link');
-enlacesMenu.forEach(enlace => {
-    enlace.addEventListener('click', () => {
-        const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
-        bsCollapse.hide();
-        iconoHamburguesa.classList.remove('bi-x');
-        iconoHamburguesa.classList.add('bi-list');
-    });
-});
-
-// 2️⃣ Cerrar el menú al hacer clic fuera de él
-document.addEventListener('click', (e) => {
-    const menuAbierto = navCollapse.classList.contains('show');
-    const clicDentroMenu = navCollapse.contains(e.target);
-    const clicEnBoton = botonHamburguesa.contains(e.target);
-
-    if (menuAbierto && !clicDentroMenu && !clicEnBoton) {
-        const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
-        bsCollapse.hide();
-        iconoHamburguesa.classList.remove('bi-x');
-        iconoHamburguesa.classList.add('bi-list');
-    }
-});
