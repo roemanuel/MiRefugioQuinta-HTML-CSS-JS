@@ -1,3 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 5rem;
+}
+
+#presupuesto {
+    scroll-margin-top: 7rem;
+}
+
 .nav {
     background-color: white;
     min-height: 5rem;
@@ -64,14 +76,22 @@
     gap: 2rem;
 }
 
-.nav-container__menu ul a {
+.nav-container__menu ul li a {
     text-decoration: none;
     color: inherit;
 }
 
-.nav-container__menu ul a li {
+.nav-container__menu ul li {
     list-style: none;
-    color: #483227;
+    color: #5D4032;
+    width: min-content;
+    transition: color 0.2s ease;
+}
+
+.nav-container__menu ul li:hover,
+.nav-container__menu ul li:focus,
+.nav-container__menu ul li:active {
+    color: #5d4032c4;
 }
 
 .nav-container__button {
@@ -919,6 +939,39 @@
 }
 
 @media (min-width: 768px) {
+    .nav-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .nav-container__hamburger {
+        display: none;
+    }
+
+    .nav-container__menu {
+        display: grid;
+        grid-column: 2/3;
+    }
+
+    .nav-container__menu ul {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1.25rem;
+        grid-column: 2/3;
+    }
+
+    .nav-container__button {
+        grid-column: 3/4;
+        display: grid;
+        justify-content: end;
+    }
+
+    .nav-container__button button {
+        width: max-content;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .card-title {
         font-size: 3.5625rem !important;
     }
