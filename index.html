@@ -37,15 +37,15 @@
 
             <div class="nav-container__menu">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#inicio" class="scroll-link">Inicio</a></li>
+                    <li><a href="#servicios" class="scroll-link">Servicios</a></li>
+                    <li><a href="#galeria" class="scroll-link">Galeria</a></li>
+                    <li><a href="#contacto" class="scroll-link">Contacto</a></li>
                 </ul>
             </div>
 
             <div class="nav-container__button">
-                <a href="#presupuesto"><button>Solicitá presupuesto</button></a>
+                <a href="#presupuesto" class="scroll-link"><button>Solicitá presupuesto</button></a>
             </div>
         </div>
     </section>
@@ -58,8 +58,12 @@
                 <h2 class="card-title">Viví tu evento en un entorno rústico y familiar</h2>
                 <p class="card-text indexP">Más que una quinta, un espacio para crear recuerdos.</p>
                 <div class="contenedorButtonSeccionHero">
-                    <a href="#presupuesto"><button type="button" class="btn btn-primary botonVisita">Agendá tu visita</button></a>
-                    <a href="#galeria"><button type="button" class="btn btn-primary botonGaleria">Ver galería</button></a>
+                    <a href="#presupuesto" class="scroll-link"><button type="button"
+                            class="btn btn-primary botonVisita">Agendá tu
+                            visita</button></a>
+                    <a href="#galeria" class="scroll-link"><button type="button"
+                            class="btn btn-primary botonGaleria">Ver
+                            galería</button></a>
                 </div>
             </div>
         </div>
@@ -130,7 +134,7 @@
                         <div class="cardIMG">
                             <img src="images/pizza-party-BCELEvaj.jpg" alt="">
                         </div>
-                        <div class="cardTitutlo">
+                        <div class="cardTitulo">
                             <i class="bi bi-egg-fried"></i>
                             <h2>Pizza Party</h2>
                         </div>
@@ -144,7 +148,7 @@
                         <div class="cardIMG">
                             <img src="images/quincho-DOA4YkPv.jpg" alt="">
                         </div>
-                        <div class="cardTitutlo">
+                        <div class="cardTitulo">
                             <i class="bi bi-balloon"></i>
                             <h2>Eventos personalizados</h2>
                         </div>
@@ -210,7 +214,7 @@
                 </div>
             </div>
             <div class="divBotonIG">
-                <a href="https://www.instagram.com/mirefugio6061/" target="_blank" class="botonIG" id="contacto">
+                <a href="https://www.instagram.com/mirefugio6061/" target="_blank" class="botonIG">
                     <i class="bi bi-instagram"></i>
                     Ver más fotos en Instagram
                 </a>
@@ -218,7 +222,7 @@
         </div>
     </section>
 
-    <section class="seccionUbicacion">
+    <section class="seccionUbicacion" id="contacto">
         <div class="containerUbicacion">
             <h2 class="seccionUbicacion_title">Ubicación y contacto</h2>
             <div class="divSeccionUbicacion">
@@ -267,29 +271,29 @@
                         <div class="mb-3">
                             <label for="inputNombreApellido" class="form-label label1">Nombre y apellido</label>
                             <input type="text" class="form-control" id="inputNombreApellido"
-                                aria-describedby="emailHelp" placeholder="Mirta Silvia Oliveto">
+                                aria-describedby="emailHelp" placeholder="Mirta Silvia Oliveto" required>
                         </div>
                         <div class="mb-3">
                             <label for="inputTipoEvento" class="form-label">Tipo de evento</label>
                             <input type="text" class="form-control" id="inputTipoEvento"
-                                placeholder="Cumpleaños, reunión familiar, etc">
+                                placeholder="Cumpleaños, reunión familiar, etc" required>
                         </div>
                         <div class="mb-3">
                             <label for="inputFechaEstimada" class="form-label">Fecha estimada</label>
                             <input type="date" class="form-control" id="inputFechaEstimada"
-                                placeholder="Cumpleaños, reunión familiar, etc">
+                                placeholder="Cumpleaños, reunión familiar, etc" required>
                         </div>
                         <div class="mb-3">
                             <label for="inputCantidadInvitados" class="form-label">Cantidad de invitados</label>
                             <input type="number" class="form-control" id="inputCantidadInvitados"
-                                placeholder="Entre 1 y 50" max="50" min="1">
+                                placeholder="Entre 1 y 50" max="50" min="1" required>
                         </div>
                         <div class="mb-3">
                             <label for="inputTelefono" class="form-label">Número de WhatsApp</label>
-                            <input type="tel" class="form-control" id="inputTelefono" placeholder="+54 9 11 3374 2086">
+                            <input type="tel" class="form-control" id="inputTelefono" placeholder="+54 9 11 3374 2086" required>
                         </div>
                         <div class="mb-3">
-                            <label for="inputMensaje" class="form-label">Mensaje</label>
+                            <label for="inputMensaje" class="form-label">Mensaje (opcional)</label>
                             <textarea class="form-control" placeholder="Contanos sobre tu evento..."
                                 id="floatingTextarea"></textarea>
                         </div>
@@ -310,10 +314,10 @@
             <div class="footer_text2">
                 <h2>Enlaces rápidos</h2>
                 <div class="footer_text2-links">
-                    <a href="#">Inicio</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#galeria">Galería</a>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#inicio" class="scroll-link">Inicio</a>
+                    <a href="#servicios" class="scroll-link">Servicios</a>
+                    <a href="#galeria" class="scroll-link">Galería</a>
+                    <a href="#contacto" class="scroll-link">Contacto</a>
                 </div>
             </div>
 

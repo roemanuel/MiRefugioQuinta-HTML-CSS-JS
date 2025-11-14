@@ -2,13 +2,34 @@ html {
     scroll-behavior: smooth;
 }
 
-section[id] {
+#galeria {
+    scroll-margin-top: 1.875rem;
+}
+
+#servicios,
+#contacto {
     scroll-margin-top: 5rem;
 }
 
 #presupuesto {
-    scroll-margin-top: 7rem;
+    scroll-margin-top: 6.875rem;
 }
+
+.limite-ancho {
+    width: 100% !important;
+    max-width: 1400px !important;
+    margin: auto;
+}
+
+.limite-ancho2 {
+    width: 100% !important;
+    max-width: 1050px !important;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
 
 .nav {
     background-color: white;
@@ -115,88 +136,6 @@ section[id] {
 .nav-container__button button:focus,
 .nav-container__button button:hover {
     background-color: #483227;
-}
-
-.limite-ancho {
-    width: 100% !important;
-    max-width: 1400px !important;
-    margin: auto;
-}
-
-.limite-ancho2 {
-    width: 100% !important;
-    max-width: 1050px !important;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-/* BARRA DE NAVEGACIÓN */
-
-.seccionBarraNav {
-    background-color: white !important;
-}
-
-.seccionBarraP {
-    display: flex;
-    gap: 0.3rem;
-    align-items: center;
-    min-height: 4rem;
-}
-
-.seccionBarraP p {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.seccionBarraP1 {
-    color: #5D4032;
-    font-family: "Playfair Display", serif;
-}
-
-.seccionBarraP2 {
-    color: #6C9B4B;
-    font-family: "Playfair Display", serif;
-}
-
-.botonHamburguesa,
-.botonHamburguesa:focus,
-.botonHamburguesa:active,
-.botonHamburguesa:hover {
-    border: none;
-    box-shadow: none;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-}
-
-.listaMenuHamburguesa {
-    gap: 1.2rem;
-}
-
-.listaMenuHamburguesa li a {
-    color: #5D4032 !important;
-}
-
-.botonMenuHamburguesa {
-    background-color: #5D4032 !important;
-    border-color: #5D4032 !important;
-    color: white !important;
-    border-radius: .625rem;
-    transition: background-color 0.2s ease, border 0.2s ease;
-    min-width: max-content;
-}
-
-.botonMenuHamburguesa:active,
-.botonMenuHamburguesa:focus,
-.botonMenuHamburguesa:hover {
-    background-color: #483227 !important;
-    border-color: #483227 !important;
-    color: white !important;
 }
 
 /* FIN DE LA BARRA DE NAVEGACIÓN */
@@ -339,6 +278,11 @@ section[id] {
     border-radius: .9375rem;
     padding: 0 .3125rem;
     min-width: 140px;
+    transition: transform 0.25s ease;
+}
+
+.tarjetaCuadradaSeccionInformacion:hover {
+    transform: translateY(-.3125rem);
 }
 
 .tarjetaCuadradaSeccionInformacion p {
@@ -384,6 +328,14 @@ section[id] {
 
 .cardFondo {
     border-radius: 1.25rem;
+    transition: transform 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cardFondo:hover {
+    transform: translateY(-0.5rem);
 }
 
 .cardIMG img {
@@ -395,24 +347,18 @@ section[id] {
     border-radius: 1.25rem 1.25rem 0 0;
 }
 
-.contenedorCardTitulo {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-}
-
-.cardTitutlo {
+.cardTitulo {
     padding: 1.5rem 2rem 0 2rem;
     display: flex;
     align-items: center;
     background-color: white;
 }
 
-.cardTitutlo i {
+.cardTitulo i {
     font-size: 1.5rem;
 }
 
-.cardTitutlo h2 {
+.cardTitulo h2 {
     text-align: left;
     color: #5D4032;
     margin: 0;
@@ -424,6 +370,7 @@ section[id] {
     padding: 1.3rem 2rem 1rem 2rem;
     background-color: white;
     border-radius: 0 0 1.25rem 1.25rem;
+    flex: 1;
 }
 
 .cardParrafo p {
@@ -501,6 +448,21 @@ section[id] {
 .contenedorIMGSeccionGaleria {
     position: relative;
     border-radius: 1.25rem;
+    transition: opacity 180ms ease, transform 180ms ease;
+    will-change: transform, opacity;
+}
+
+/* fade-out visual previa a la remoción del elemento del layout */
+.fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+/* items que están "en proceso" de aparecer */
+.pre-enter {
+    opacity: 0;
+    transform: scale(0.95);
 }
 
 .imgSeccionGaleria img {
@@ -847,8 +809,15 @@ section[id] {
 
 .footer_text2-links a {
     text-decoration: none;
-    color: inherit;
+    color: white;
     max-width: max-content;
+    transition: color 0.2s ease;
+}
+
+.footer_text2-links a:hover,
+.footer_text2-links a:focus,
+.footer_text2-links a:active {
+    color: rgba(255, 255, 255, 0.774);
 }
 
 .footer_text3 {
@@ -920,6 +889,12 @@ section[id] {
     .cuadradosSeccionInformacion {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .contenedorSeccionServicios_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
 }
 
 @media (min-width: 680px) {
@@ -990,10 +965,6 @@ section[id] {
 
     .seccionUbicacion_title {
         font-size: 3.125rem !important;
-    }
-
-    .listaMenuHamburguesa {
-        align-items: center;
     }
 
     .footer__container {
