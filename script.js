@@ -73,7 +73,7 @@ window.addEventListener('resize', () => {
     }
 });
 
-
+// FIN DEL MENÚ //
 
 // FILTRO SECCIÓN GALERÍA //
 
@@ -106,5 +106,3 @@ document.querySelector('.buttonEventos').addEventListener('click', () => {
 });
 
 // FIN DEL FILTRO SECCIÓN GALERÍA //
-
-
