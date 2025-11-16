@@ -482,10 +482,14 @@ html {
     font-weight: 400;
 }
 
+.contenedorIMGSeccionGaleria div img {
+    transition: transform 0.3s ease;
+}
+
 .contenedorIMGSeccionGaleria:hover div img,
 .contenedorIMGSeccionGaleria:focus div img,
 .contenedorIMGSeccionGaleria:active div img {
-    filter: brightness(65%);
+    transform: scale(1.06);
 }
 
 .contenedorIMGSeccionGaleria:hover p,
