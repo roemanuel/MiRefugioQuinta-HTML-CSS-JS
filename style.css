@@ -263,6 +263,10 @@ html {
     color: #6C9B4B;
 }
 
+.seccionInformacion_rigth img {
+    width: 1.25rem;
+}
+
 .cuadradosSeccionInformacion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -279,6 +283,11 @@ html {
     padding: 0 .3125rem;
     min-width: 140px;
     transition: transform 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .3125rem;
 }
 
 .tarjetaCuadradaSeccionInformacion:hover {
@@ -291,9 +300,10 @@ html {
     margin: 0 0 0.7rem 0;
 }
 
-.tarjetaCuadradaSeccionInformacion i {
-    font-size: 2.2rem;
-    margin: 0.2rem 0 0 0;
+.tarjetaCuadradaSeccionInformacion img {
+    height: 2.5rem;
+    width: 2.2rem;
+    margin: .5625rem 0 0 0;
 }
 
 /* FIN DE INFORMACIÓN */
@@ -354,8 +364,8 @@ html {
     background-color: white;
 }
 
-.cardTitulo i {
-    font-size: 1.5rem;
+.cardTitulo img {
+    width: 2rem;
 }
 
 .cardTitulo h2 {
