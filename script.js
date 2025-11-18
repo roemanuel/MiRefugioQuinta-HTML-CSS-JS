@@ -4,7 +4,7 @@ const btnHamburguesa = document.querySelector('.nav-container__hamburger');
 const icono = btnHamburguesa.querySelector('i');
 const menu = document.querySelector('.nav-container__menu');
 const botonExtra = document.querySelector('.nav-container__button');
-const enlacesMenu = document.querySelectorAll('.nav-container__menu li');
+const enlacesMenu = document.querySelectorAll('.nav-container__menu ul a');
 
 let menuAbierto = false;
 
@@ -35,8 +35,8 @@ menu.addEventListener('click', (e) => {
 });
 
 // CERRAR AL CLICKEAR ENLACE
-enlacesMenu.forEach(li => {
-    const enlace = li.querySelector('a');
+enlacesMenu.forEach(a => {
+    const enlace = a.querySelector('li');
     if (enlace) {
         enlace.addEventListener('click', () => {
             if (esMovil()) cerrarMenu();

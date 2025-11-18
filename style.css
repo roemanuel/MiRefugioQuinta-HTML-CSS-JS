@@ -97,21 +97,20 @@ html {
     gap: 2rem;
 }
 
-.nav-container__menu ul li a {
+.nav-container__menu ul a {
     text-decoration: none;
     color: inherit;
 }
 
-.nav-container__menu ul li {
+.nav-container__menu ul a li {
     list-style: none;
     color: #5D4032;
-    width: min-content;
     transition: color 0.2s ease;
 }
 
-.nav-container__menu ul li:hover,
-.nav-container__menu ul li:focus,
-.nav-container__menu ul li:active {
+.nav-container__menu ul a li:hover,
+.nav-container__menu ul a li:focus,
+.nav-container__menu ul a li:active {
     color: #5d4032c4;
 }
 
