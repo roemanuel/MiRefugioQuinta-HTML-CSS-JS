@@ -931,6 +931,9 @@ html {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .nav-container__menu ul a {
+        width: min-content;
+    }
 
     .nav-container__hamburger {
         display: none;
